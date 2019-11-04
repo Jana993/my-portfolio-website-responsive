@@ -108,10 +108,15 @@ body {
   color: #21143D;
 }
 
+h1, h2, h3, h4 {
+  font-family: "Work Sans", sans-serif;
+}
+
 
 a {
   text-decoration: none;
   color: #21143D;
+  font-family: "Work Sans", sans-serif;
 }
 
 h2 {
@@ -195,18 +200,20 @@ nav ul li {
   color: #601009;
   font-family: 'Sacramento', cursive;
   font-size: 1.5em;
+  font-weight: 600;
 }
 
 #greeting h1 {
   font-size: 1.5em;
   word-spacing: 0.12em;
   padding-top: 1em;
+  font-weight: 500;
 }
 
 #greeting h2 {
   font-weight: lighter;
   width: 85%;
-
+  font-weight: 400;
 }
 
 /* ------ work section ----------- */
@@ -218,11 +225,12 @@ nav ul li {
 }
 
 .work h2 {
-  font-family: 'Libre Baskerville', serif;
   text-align: center;
   color: #601009;
   margin: 0;
   padding-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .work .content-wrapper {
@@ -249,6 +257,10 @@ article h3,h4 {
   font-size: 1em;
 }
 
+article h3 {
+  margin-bottom: 0.5em;
+}
+
 article h4 {
   font-weight:lighter;
   margin-top: 0;
@@ -258,7 +270,7 @@ article h4 {
 }
 
 article p {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight:lighter;
   color: #bebec1;
 }
@@ -268,7 +280,7 @@ article p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #dbdbdb;
+  background: #bebec1;
 }
 
 .about .content-wrapper {
@@ -276,12 +288,18 @@ article p {
 }
 
 .about h2 {
-  font-family: 'Libre Baskerville', serif;
   text-align: center;
   color: #601009;
   margin: 0;
   padding-bottom: 1em;
   width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.about h3 {
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .about article {
@@ -336,9 +354,14 @@ footer {
 .hire h3,
 .meet h3,
 .social h3 {
+  text-transform: uppercase;
+  font-weight: 500;
   margin: 0.5em 0 0 0;
   padding: 0;
-  font-family: 'Merriweather', serif;
+}
+
+.hire h3 {
+  margin-bottom: 0.5em;
 }
 
 .hire p,
@@ -350,6 +373,8 @@ footer {
 .footer-content h2 {
   width: 100%;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .hire,
@@ -394,6 +419,7 @@ footer .social-icons p {
 }
 
 .copyright p {
+  font-family: "Work Sans", sans-serif;
   margin: 0;
   padding-top: 1.25em;
 }
@@ -547,6 +573,7 @@ footer .social-icons p {
     width: 57%;
     margin-left: 1.875em;
     margin-bottom: 1em;
+    font-weight: 450;
   }
 
   #greeting span {
@@ -633,7 +660,7 @@ footer .social-icons p {
     font-size: 2em;
     width: 80%;
     padding: 1.5em 2em 2em 0;
-    font-weight: normal;
+    font-weight: 500;
   }
 
   #greeting span {
