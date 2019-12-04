@@ -104,18 +104,12 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', serif;
+  font-family: 'Work Sans', sans-serif;
   color: #21143D;
 }
-
-h1, h2, h3, h4 {
-  font-family: "Work Sans", sans-serif;
-}
-
 
 a {
   text-decoration: none;
-  color: #21143D;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -167,7 +161,8 @@ header .content-wrapper .hero-area {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  min-height: 350px;
+  min-height: 280px;
+  width: 100%;
 }
 
 header nav {
@@ -188,7 +183,11 @@ nav ul {
 }
 
 nav ul li {
-  padding-right: 2.5em;
+  padding-right: 1.2em;
+}
+
+nav a {
+  color: #bebec1;
 }
 
 #greeting {
@@ -197,7 +196,7 @@ nav ul li {
 }
 
 #greeting span {
-  color: #601009;
+  color: #900C3F;
   font-family: 'Sacramento', cursive;
   font-size: 1.5em;
   font-weight: 600;
@@ -212,7 +211,7 @@ nav ul li {
 
 #greeting h2 {
   font-weight: lighter;
-  width: 85%;
+  width: 75%;
   font-weight: 400;
 }
 
@@ -226,11 +225,16 @@ nav ul li {
 
 .work h2 {
   text-align: center;
-  color: #601009;
   margin: 0;
   padding-bottom: 1em;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-size: 1.6em;
+  letter-spacing: 0.15em;
+}
+
+.work a {
+  color: #900C3F;
+  font-family: 'Ovo', serif;
+  font-weight: 600;
 }
 
 .work .content-wrapper {
@@ -249,6 +253,10 @@ nav ul li {
   margin: 1em 1.25em;
 }
 
+.work img {
+  border: 0.3em solid white;
+}
+
 article figure {
   width: 100%
 }
@@ -261,48 +269,66 @@ article h3 {
   margin-bottom: 0.5em;
 }
 
-article h4 {
+.projects article h4 {
   font-weight:lighter;
   margin-top: 0;
-  color: #601009;
+  color: #bebec1;
   line-height: 1em;
   padding: 0;
 }
 
-article p {
-  font-size: 1em;
-  font-weight:lighter;
-  color: #bebec1;
+form {
+  display: block;
+  text-align: center;
+  padding: 1em 0 1em 0;
 }
 
+button {
+  font-size: 0.7em;
+  padding: 0.8em 1.5em 0.8em 1.5em;
+  border-radius: 10px;
+  border: solid 1px #900C3F;
+  background:transparent;
+  color: #900C3F;
+}
+
+button:hover {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+
 /* -------- about ------- */
-.about {
+#about {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #bebec1;
+  background: #E1E1E5;
 }
 
-.about .content-wrapper {
+#about .content-wrapper {
   width:100%;
 }
 
-.about h2 {
+#about h2 {
   text-align: center;
-  color: #601009;
+  color: #900C3F;
   margin: 0;
   padding-bottom: 1em;
   width: 100%;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-family: 'Ovo', serif;
+  font-weight: 600;
+  font-size: 1.6em;
+  letter-spacing: 0.15em;
 }
 
-.about h3 {
-  text-transform: uppercase;
-  font-weight: 500;
+#about h3 {
+  font-size: 1.3em;
+  font-family: 'Ovo', serif;
+  padding-bottom: 0.3em;
 }
 
-.about article {
+#about article {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -314,11 +340,11 @@ article .about-info {
   padding: 0 2em 0 2em;
 }
 
-.about figure {
+#about figure {
   width: 35%;
 }
 
-.about img {
+#about img {
   border-radius: 50%;
 }
 
@@ -330,7 +356,16 @@ article .about-info {
   color: #21143D;
 }
 
+#first-about {
+  margin-bottom: 2em;
+}
+
+.about-info span {
+  font-weight: bold;
+}
+
 /* --------- foooter ---------- */
+
 footer {
   display: flex;
   justify-content: center;
@@ -339,78 +374,81 @@ footer {
   width: 100%;
 }
 
-.footer-content {
+#footer-content {
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
+footer h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: 'Ovo', serif;
+  font-weight: 600;
+  font-size: 1.8em;
+  letter-spacing: 0.15em;
+  color: #900C3F;
+}
 
-.footer-content h3, p, a {
-  color: #bebec1;
+#footer-content h3, p, a {
+  color: #900C3F;
+}
+
+.hire,
+.social,
+.meet {
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
 
 .hire h3,
 .meet h3,
 .social h3 {
-  text-transform: uppercase;
   font-weight: 500;
-  margin: 0.5em 0 0 0;
-  padding: 0;
-}
-
-.hire h3 {
-  margin-bottom: 0.5em;
+  margin: 0;
+  padding: 0 0 1em 0;
 }
 
 .hire p,
 .meet p,
 .social p {
   font-weight: lighter;
+  margin: 0;
 }
 
-.footer-content h2 {
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
+.hire a i {
+  padding-bottom: 1em;
 }
 
-.hire,
-.meet {
-  width: 35%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  padding: 1em;
-  margin-bottom: 1em;
-}
-
-.social {
-  width: 70%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+.social h3 {
+  margin-top: 1.2em;
+  margin-bottom: 0;
 }
 
 .social-icons {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
-  width: 100%;
-  justify-content: space-around;
-  padding: 1.25em;
 }
 
 footer .social-icons p {
   margin: 0;
   border-radius: 50%;
-  font-size: 3em;
+  font-size: 1.5em;
   color: #bebec1;
+  padding: 0 1em 1.2em 1em;
+}
+
+.meet p {
+  padding: 0;
+  margin: 0 0 1.5em 0;
+  line-height: 1.5em;
 }
 
 .copyright {
@@ -419,14 +457,37 @@ footer .social-icons p {
 }
 
 .copyright p {
-  font-family: "Work Sans", sans-serif;
   margin: 0;
-  padding-top: 1.25em;
+  padding-top: 1.3em;
+  color: #bebec1;
+  padding-bottom: 1em;
 }
 
 
+/* ======= portfolio page */
 
 
+ .portfolio-change .project-description  h4 {
+  font-weight:lighter;
+  margin-top: 0;
+  color: #900C3F;
+  line-height: 1em;
+  padding: 0;
+}
+
+.projects .portfolio-change .project-description  p {
+  font-size: 1em;
+  font-weight:lighter;
+  color: #bebec1;
+}
+
+#portfolio-content h2 {
+  font-family: 'Ovo', serif;
+  font-weight: 600;
+  font-size: 1.6em;
+  letter-spacing: 0.15em;
+  color: #900C3F;
+}
 
 
 
@@ -543,6 +604,10 @@ footer .social-icons p {
     width: 100%;
   }
 
+  header .content-wrapper .hero-area {
+    min-height: 300px;
+  }
+
   header nav {
     width: 50%;
     margin: 0;
@@ -554,6 +619,10 @@ footer .social-icons p {
     justify-content: center;
     padding: 0;
     margin: 0;
+  }
+
+  nav ul li {
+    padding-right: 2.5em;
   }
 
   #greeting {
@@ -585,14 +654,27 @@ footer .social-icons p {
     justify-content: space-around;
   }
 
+  form {
+    display: block;
+    text-align: center;
+    padding: 1.2em 0 1em 0;
+  }
+
+  button {
+    font-size: 0.8em;
+    padding: 0.8em 1.8em 0.8em 1.8em;
+  }
+
+
+
 /* --------- about ---------- */
-  .about .content-wrapper {
+  #about .content-wrapper {
     padding: 1em;
   }
 
-  .about article {
+  #about article {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-flow: row wrap;
   }
@@ -602,27 +684,26 @@ footer .social-icons p {
     padding: 0;
   }
 
-  .about article h3 {
+  #about article h3 {
     margin: 0;
   }
 
-  .hire,
-  .meet {
-    flex-flow: column wrap;
+  #about figure {
+    padding-right: 3em;
   }
 
-  .hire p,
-  .meet p {
-    margin: 0.5em;
-  }
 
-  .social-icons {
-    padding: 1em;
-    justify-content: center;
+/* Footer */
+
+  .footer-info {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
   }
 
   footer .social-icons p {
-      margin: 0 0.5em 0 0.5em;
+    font-size: 2em;
+    padding: 0 0.5em 1.2em 0.5em;
   }
 }
 
@@ -636,7 +717,7 @@ footer .social-icons p {
 
   /* header */
   header .content-wrapper .hero-area {
-    min-height: 600px;
+    min-height: 500px;
     justify-content: flex-start;
     align-content: flex-start;
   }
@@ -644,6 +725,10 @@ footer .social-icons p {
   header nav {
     font-size: 1.25em;
     width: 100%;
+  }
+
+  nav ul li {
+    padding-right: 2.5em;
   }
 
 
@@ -667,29 +752,52 @@ footer .social-icons p {
     font-size: 1.8em;
   }
 
+/* ------- work ------ */
+form {
+  padding: 1.5em 0 1.2em 0;
+}
+
+button {
+  font-size: 1em;
+  padding: 1em 2.2em 1em 2.2em;
+  border-radius: 10px;
+}
+
 /* ------- about -------- */
-  .about .content-wrapper {
+  #about .content-wrapper {
     align-content: center;
   }
 
-  .about article {
-    justify-content: space-around;
+  #about article {
+    justify-content: center;
     width: 100%;
   }
 
-  .about article figure {
+  #about article figure {
     width: 23%;
-    padding-left: 3em;
+    padding-right: 6em;
   }
 
   .about-info h3 {
     font-size: 1.2em;
-    padding-left: 1.1em;
+    padding-left: 2.3em;
   }
 
   .about-info p {
     font-size:  1em;
-    padding-left: 1.2em;
+    padding-left: 3em;
+  }
+
+/* footer */
+  .footer-info {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+  }
+
+  footer .social-icons p {
+    font-size: 3em;
+    padding: 0 0.7em 1.2em 0.7em;
   }
 }
 
