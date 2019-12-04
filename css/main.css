@@ -184,6 +184,7 @@ nav ul {
 
 nav ul li {
   padding-right: 1.2em;
+  font-size: 0.7em;
 }
 
 nav a {
@@ -622,7 +623,8 @@ footer .social-icons p {
   }
 
   nav ul li {
-    padding-right: 2.5em;
+    padding-right: 1.8em;
+    font-size: 1em;
   }
 
   #greeting {
