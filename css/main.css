@@ -465,7 +465,7 @@ footer .social-icons p {
 }
 
 
-/* ======= portfolio page */
+/* ======= portfolio page ========== */
 
 
  .portfolio-change .project-description  h4 {
@@ -482,7 +482,7 @@ footer .social-icons p {
   color: #bebec1;
 }
 
-#portfolio-content h2 {
+#portfolio-content h2, #services-content h2 {
   font-family: 'Ovo', serif;
   font-weight: 600;
   font-size: 1.6em;
@@ -490,6 +490,38 @@ footer .social-icons p {
   color: #900C3F;
 }
 
+/* ======= services page =========== */
+.services .content-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+#services-content h2 {
+  color: #21143D;
+  margin-bottom: 1.5em;
+}
+
+.services-example {
+  margin-bottom: 3em;
+  padding: 0 5em;
+}
+
+#services-photo {
+  font-size: 3.5em;
+  opacity: 0.7;
+  color: #bebec1;
+}
+
+.services-description h3 {
+  color: #900C3F;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.services-description p {
+  color: #21143D;
+}
 
 
 
@@ -667,8 +699,6 @@ footer .social-icons p {
     padding: 0.8em 1.8em 0.8em 1.8em;
   }
 
-
-
 /* --------- about ---------- */
   #about .content-wrapper {
     padding: 1em;
@@ -706,6 +736,23 @@ footer .social-icons p {
   footer .social-icons p {
     font-size: 2em;
     padding: 0 0.5em 1.2em 0.5em;
+  }
+
+  /* ======= services page =========== */
+  .services-example {
+    margin-bottom: 3em;
+    padding: 0 7em;
+  }
+
+  .services-description h3 {
+    margin-top: 0.5em;
+  }
+
+
+  #services-photo {
+    font-size: 4em;
+    opacity: 0.7;
+    color: #bebec1;
   }
 }
 
@@ -801,6 +848,14 @@ button {
     font-size: 3em;
     padding: 0 0.7em 1.2em 0.7em;
   }
+
+  /* ======= services page =========== */
+  .services-example {
+    margin-bottom: 3em;
+    padding: 0 13.5em;
+  }
+
+
 }
 
 
